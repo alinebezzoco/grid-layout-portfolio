@@ -1,5 +1,51 @@
- 
-  <header></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meu Portfolio</title>
+  
+  <style> 
+    body { 
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid; 
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 330px 50px;
+  grid-template-areas: 
+    'header header header' 
+    'aside main main' 
+    'footer footer footer'; /* sempre de 3 em 3 */
+}
+
+header {
+  grid-area: header;
+  background-color: #9009A0;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #cc0099;
+}
+
+main {
+  grid-area: main;
+  background-color: #ff00ff;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #cc33ff;
+}
+  </style>
+</head>
+<body>
+    <header></header>
   <aside></aside>
   <main></main>
   <footer></footer>
+</body>
+</html>
